@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Manipulação de atributos -->
+    
+    <!-- Na linha 15 do código, eu inseri uma tag <img> para adicionar as imagens que vai estar no estudo
+    adiconei nela primeiramente uma class="imagem", que vai servir para selecionar via código em Javascript.
+    Posteriormente eu criei um segundo atributo com o nome de data-ani="Cachorro", para que na hora de clicar na imagem
+    no console mostre o nome do animal que foi selecionado.
+    -->
+    <img src="./imagens/Cachorro.jpg" data-ani="Cachorro" class="imagem"><br><br>
+
+    
+    <!--Logo em seguida foi criado os buttons que iriam fazer parte do projeto para, selecionar o animal entre Cachorro e Gato via Javascript, e também adicionei um button para que fosse mostrado via Alert(), qual animal era aquele.  Foi adicionado também um atributo chamado onclick="trocarImagem" para ser usado via Function no Js, para selecionar através do click, o animal-->
+    <button onclick="trocarImagem('Cachorro.jpg', 'Cachorro')">Cachorro</button>
+    <button onclick="trocarImagem('gato.jpg', 'Gato')">Gato</button>
+    <button onclick="pegarAnimal()">Que animal é esse?</button>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
